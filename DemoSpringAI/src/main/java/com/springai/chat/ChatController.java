@@ -21,7 +21,7 @@ public class ChatController {
 	@GetMapping("/chat")
 	public String chat() {
 		return chatClient.prompt()
-				.user("what is today date")
+				.user("what is my name?")
 				.call()
 				.content();
 	}
