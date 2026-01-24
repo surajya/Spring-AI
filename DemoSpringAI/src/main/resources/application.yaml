@@ -5,10 +5,17 @@
 #Inject ChatClient in your controller and call /chat endpoint from STS or browser to get responses.
 
 #For Ollama models, you can change the model name in application.yaml to use different models like gemma:2b, moondream, etc.
+#spring:
+#  ai:
+#   ollama:
+#      base-url: http://localhost:11434
+#      chat:
+#        options:
+#          model: gemma:2b
+
+# To use a different model, change the model name above to your desired Ollama model.
 spring:
   ai:
-   ollama:
-      base-url: http://localhost:11434
-      chat:
-        options:
-          model: gemma:2b
+    google:
+      genai:
+        api-key: ${GOOGLE_GENAI_API_KEY}
