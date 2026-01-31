@@ -1,0 +1,237 @@
+[
+  {
+    "company": "Maruti Suzuki",
+    "modelName": "Swift",
+    "contextWindowSize": 1197
+  },
+  {
+    "company": "Maruti Suzuki",
+    "modelName": "Baleno",
+    "contextWindowSize": 1197
+  },
+  {
+    "company": "Maruti Suzuki",
+    "modelName": "Brezza",
+    "contextWindowSize": 1462
+  },
+  {
+    "company": "Hyundai",
+    "modelName": "i20",
+    "contextWindowSize": 1197
+  },
+  {
+    "company": "Hyundai",
+    "modelName": "Creta",
+    "contextWindowSize": 1497
+  },
+  {
+    "company": "Hyundai",
+    "modelName": "Verna",
+    "contextWindowSize": 1482
+  },
+  {
+    "company": "Tata",
+    "modelName": "Nexon",
+    "contextWindowSize": 1497
+  },
+  {
+    "company": "Tata",
+    "modelName": "Punch",
+    "contextWindowSize": 1199
+  },
+  {
+    "company": "Tata",
+    "modelName": "Harrier",
+    "contextWindowSize": 1956
+  },
+  {
+    "company": "Mahindra",
+    "modelName": "XUV300",
+    "contextWindowSize": 1197
+  },
+  {
+    "company": "Mahindra",
+    "modelName": "XUV700",
+    "contextWindowSize": 1997
+  },
+  {
+    "company": "Mahindra",
+    "modelName": "Thar",
+    "contextWindowSize": 1997
+  },
+  {
+    "company": "Honda",
+    "modelName": "City",
+    "contextWindowSize": 1498
+  },
+  {
+    "company": "Honda",
+    "modelName": "Amaze",
+    "contextWindowSize": 1199
+  },
+  {
+    "company": "Toyota",
+    "modelName": "Innova Crysta",
+    "contextWindowSize": 2393
+  },
+  {
+    "company": "Toyota",
+    "modelName": "Fortuner",
+    "contextWindowSize": 2755
+  },
+  {
+    "company": "Toyota",
+    "modelName": "Glanza",
+    "contextWindowSize": 1197
+  },
+  {
+    "company": "Kia",
+    "modelName": "Seltos",
+    "contextWindowSize": 1497
+  },
+  {
+    "company": "Kia",
+    "modelName": "Sonet",
+    "contextWindowSize": 1197
+  },
+  {
+    "company": "Kia",
+    "modelName": "Carens",
+    "contextWindowSize": 1497
+  },
+  {
+    "company": "Skoda",
+    "modelName": "Slavia",
+    "contextWindowSize": 1498
+  },
+  {
+    "company": "Skoda",
+    "modelName": "Kushaq",
+    "contextWindowSize": 1498
+  },
+  {
+    "company": "Volkswagen",
+    "modelName": "Virtus",
+    "contextWindowSize": 1498
+  },
+  {
+    "company": "Volkswagen",
+    "modelName": "Taigun",
+    "contextWindowSize": 1498
+  },
+  {
+    "company": "Renault",
+    "modelName": "Kiger",
+    "contextWindowSize": 999
+  },
+  {
+    "company": "Renault",
+    "modelName": "Triber",
+    "contextWindowSize": 999
+  },
+  {
+    "company": "Nissan",
+    "modelName": "Magnite",
+    "contextWindowSize": 999
+  },
+  {
+    "company": "MG",
+    "modelName": "Hector",
+    "contextWindowSize": 1956
+  },
+  {
+    "company": "MG",
+    "modelName": "Astor",
+    "contextWindowSize": 1498
+  },
+  {
+    "company": "Jeep",
+    "modelName": "Compass",
+    "contextWindowSize": 1956
+  },
+  {
+    "company": "Jeep",
+    "modelName": "Meridian",
+    "contextWindowSize": 1956
+  },
+  {
+    "company": "BMW",
+    "modelName": "3 Series",
+    "contextWindowSize": 1998
+  },
+  {
+    "company": "BMW",
+    "modelName": "X5",
+    "contextWindowSize": 2998
+  },
+  {
+    "company": "Mercedes-Benz",
+    "modelName": "C-Class",
+    "contextWindowSize": 1999
+  },
+  {
+    "company": "Mercedes-Benz",
+    "modelName": "GLE",
+    "contextWindowSize": 2999
+  },
+  {
+    "company": "Audi",
+    "modelName": "A4",
+    "contextWindowSize": 1984
+  },
+  {
+    "company": "Audi",
+    "modelName": "Q5",
+    "contextWindowSize": 1984
+  },
+  {
+    "company": "Tesla",
+    "modelName": "Model 3",
+    "contextWindowSize": 0
+  },
+  {
+    "company": "Tesla",
+    "modelName": "Model Y",
+    "contextWindowSize": 0
+  },
+  {
+    "company": "Volvo",
+    "modelName": "XC40",
+    "contextWindowSize": 1969
+  },
+  {
+    "company": "Volvo",
+    "modelName": "XC60",
+    "contextWindowSize": 1969
+  },
+  {
+    "company": "Porsche",
+    "modelName": "Macan",
+    "contextWindowSize": 1984
+  },
+  {
+    "company": "Porsche",
+    "modelName": "Cayenne",
+    "contextWindowSize": 2995
+  },
+  {
+    "company": "Lexus",
+    "modelName": "ES",
+    "contextWindowSize": 2487
+  },
+  {
+    "company": "Lexus",
+    "modelName": "RX",
+    "contextWindowSize": 2487
+  },
+  {
+    "company": "Jaguar",
+    "modelName": "XF",
+    "contextWindowSize": 1997
+  },
+  {
+    "company": "Land Rover",
+    "modelName": "Defender",
+    "contextWindowSize": 2997
+  }
+]

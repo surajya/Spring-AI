@@ -1,0 +1,26 @@
+#Install Ollama for Windows, run ollama pull gemma:2b, and verify with ollama run gemma:2b.
+#Add dependency spring-ai-starter-model-ollama (version 1.1.1) to your Spring Boot pom.xml.
+#Configure application.properties with spring.ai.ollama.base-url=http://localhost:11434 and spring.ai.ollama.chat.options.model=gemma:2b.
+#Create a ChatClient bean using ChatClient.create(OllamaChatModel) in a @Configuration class.
+#Inject ChatClient in your controller and call /chat endpoint from STS or browser to get responses.
+
+#For Ollama models, you can change the model name in application.yaml to use different models like gemma:2b, moondream, etc.
+#spring:
+#  ai:
+#   ollama:
+#      base-url: http://localhost:11434
+#      chat:
+#        options:
+#          model: gemma:2b
+
+# To use a different model, change the model name above to your desired Ollama model.
+spring:
+  ai:
+    google:
+      genai:
+        api-key: ${GOOGLE_GENAI_API_KEY}
+        embedding:
+          text:
+            options:
+              model: text-embedding-004
+          api-key: ${GOOGLE_GENAI_API_KEY}
