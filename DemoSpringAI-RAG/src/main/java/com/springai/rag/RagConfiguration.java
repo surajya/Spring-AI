@@ -1,0 +1,63 @@
+package com.springai.rag;
+
+import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.ai.document.Document;
+import org.springframework.ai.embedding.EmbeddingModel;
+import org.springframework.ai.reader.TextReader;
+import org.springframework.ai.transformer.splitter.TokenTextSplitter;
+import org.springframework.ai.vectorstore.SimpleVectorStore;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.Resource;
+
+
+@Configuration
+public class RagConfiguration {
+
+	private static final Logger logger = LoggerFactory.getLogger(RagConfiguration.class);
+	private final String vectorStoreName = "vectorStore.json";
+
+	@Value("classpath:/data/models.json")
+	private Resource models;
+
+
+	public RagConfiguration() {
+		logger.info("RAG Configuration initialized.");
+	}
+
+	@Bean
+	SimpleVectorStore simpleVectorStore(EmbeddingModel embeddingModel) {
+
+		var simpleVectorStore = SimpleVectorStore.builder(embeddingModel).build();
+		File vectorStoreFile = getVectorStoreFile();
+		if (vectorStoreFile.exists()) {
+			simpleVectorStore.load(vectorStoreFile);
+			logger.info("Loaded vector store from file {}: ", vectorStoreFile.getAbsolutePath());
+		} else {
+			logger.info("create vector store from at {}: ", vectorStoreFile.getAbsolutePath());
+			TextReader textReader = new TextReader(models);
+			textReader.getCustomMetadata().put("filename", "models.txt");
+			List<Document> documents = textReader.get();
+			TokenTextSplitter textSplitter = new TokenTextSplitter();
+			List<Document> splitDocuments = textSplitter.apply(documents);
+
+			simpleVectorStore.add(splitDocuments);
+			simpleVectorStore.save(vectorStoreFile);
+		}
+		return simpleVectorStore;
+	}
+
+	private File getVectorStoreFile() {
+
+		Path path = Paths.get("src", "main", "resources", "data");
+		String absolutePath = path.toFile().getAbsolutePath() + "/" + vectorStoreName;
+		return new File(absolutePath);
+	}
+}
