@@ -18,6 +18,7 @@ spring:
   ai:
     google:
       genai:
+        api-key: ${GOOGLE_GENAI_API_KEY}
         embedding:
           text:
             options:

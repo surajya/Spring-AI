@@ -36,7 +36,7 @@ public class RagConfiguration {
 	SimpleVectorStore simpleVectorStore(EmbeddingModel embeddingModel) {
 
 		var simpleVectorStore = SimpleVectorStore.builder(embeddingModel).build();
-		File vectorStoreFile = getVectorStoreFile();
+		var vectorStoreFile = getVectorStoreFile();
 		if (vectorStoreFile.exists()) {
 			simpleVectorStore.load(vectorStoreFile);
 			logger.info("Loaded vector store from file {}: ", vectorStoreFile.getAbsolutePath());
