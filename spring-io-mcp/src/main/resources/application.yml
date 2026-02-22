@@ -1,0 +1,17 @@
+spring:
+  ai:
+    mcp:
+      server:
+        enabled: true
+        name: spring-io-2026
+        version: 1.0.0
+        type: SYNC
+        instructions: "This server provodes server catlog and server capabilities for Spring IO MCP."
+        capabilities:
+          tool: true
+          resource: false
+          completion: false
+          prompt: false
+
+server:
+  port: 8085
